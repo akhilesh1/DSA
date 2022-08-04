@@ -11,6 +11,8 @@ Keep calculating profit at every step
  */
 package ArraySimplePackage.Arrays;
 
+import java.util.ArrayList;
+
 public class Easy_StockBuySell_MaxProfit {
     public static int maximumProfit(ArrayList<Integer> prices){
         // Write your code here.
