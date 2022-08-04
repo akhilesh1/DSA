@@ -18,7 +18,7 @@ item1,item2 and freq1,freq2
 get item1 and item2 check if anyone of it have really freqency >N/3
 
  */
-package ArraySimplePackage.Arrays;
+package Arrays.All;
 
 import java.util.List;
 

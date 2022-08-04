@@ -14,7 +14,7 @@ Problem Constraints
 Solution
 we need to traverse from the right and carry forward the g count with starting a
  */
-package ArraySimplePackage.Arrays;
+package Arrays.All;
 
 public class Easy_AG_SuSequence {
     public int solve(String A) {

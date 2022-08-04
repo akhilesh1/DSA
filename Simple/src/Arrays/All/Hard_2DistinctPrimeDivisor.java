@@ -9,7 +9,7 @@ You are given a number A, and you need to determine the count of lucky numbers b
 Problem Constraints
 1 <= A <= 50000
  */
-package ArraySimplePackage.Arrays;
+package Arrays.All;
 
 public class Hard_2DistinctPrimeDivisor {
     public int solve(int A) {

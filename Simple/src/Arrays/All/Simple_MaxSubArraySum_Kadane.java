@@ -12,7 +12,7 @@ Solution approach
 |===> Keep adding if you get max value
 *if if sum gets -ive make it zero*
  */
-package ArraySimplePackage.Arrays;
+package Arrays.All;
 
 public class Simple_MaxSubArraySum_Kadane {
     public int maxSubArray(final int[] A) {

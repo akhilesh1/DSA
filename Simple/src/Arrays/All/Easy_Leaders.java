@@ -21,7 +21,7 @@ Carry forward the maxElement from right and compare it with current element
 increase count if we encounter greater element
 
  */
-package ArraySimplePackage.Arrays;
+package Arrays.All;
 
 import java.util.ArrayList;
 

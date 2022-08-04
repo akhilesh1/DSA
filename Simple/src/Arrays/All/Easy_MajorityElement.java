@@ -16,7 +16,7 @@ decrease the frequency if same as previous element not found
 if (freq==0) set curItem=A[i] and freq=1
 
  */
-package ArraySimplePackage.Arrays;
+package Arrays.All;
 
 public class Easy_MajorityElement {
     public int majorityElement(final int[] A) {

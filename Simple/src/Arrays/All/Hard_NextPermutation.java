@@ -27,7 +27,7 @@ A length 1 return
 if I1 and I2 not valid do not do swap.
 If already at last dictionary entry just reverse the whole string
  */
-package ArraySimplePackage.Arrays;
+package Arrays.All;
 
 import java.util.ArrayList;
 

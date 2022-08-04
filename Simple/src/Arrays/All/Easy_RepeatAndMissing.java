@@ -19,7 +19,7 @@ A = 3, B = 4
 
 
  */
-package ArraySimplePackage.Arrays;
+package Arrays.All;
 
 public class Easy_RepeatAndMissing {
     public int[] repeatedNumber(final int[] A) {

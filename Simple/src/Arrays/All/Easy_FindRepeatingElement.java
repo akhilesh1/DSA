@@ -16,7 +16,7 @@ Problem Constraints
 Solution
 Keep a hashmap as soon as encounter duplicate return
  */
-package ArraySimplePackage.Arrays;
+package Arrays.All;
 
 import java.util.HashMap;
 

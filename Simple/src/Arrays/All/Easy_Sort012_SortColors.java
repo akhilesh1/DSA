@@ -15,7 +15,7 @@ Problem Constraints
 Solution approach
 count occurance  of 0 and 1 then simply fill in
  */
-package ArraySimplePackage.Arrays;
+package Arrays.All;
 
 public class Easy_Sort012_SortColors {
     public int[] sortColors(int[] A) {

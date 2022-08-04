@@ -25,7 +25,7 @@ L=0;R=0; create PS
 2)simple trverse i [1,n-1] chek if anywhere L=R return that i
 
  */
-package ArraySimplePackage.Arrays;
+package Arrays.All;
 public class Medium_Equilibrium_Index {
     public int solve(int[] A) {
         int[] PS=new int[A.length];

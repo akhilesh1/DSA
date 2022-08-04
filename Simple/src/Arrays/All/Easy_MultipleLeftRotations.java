@@ -14,7 +14,7 @@ Rotation we dont know but we know reverse very well, so we will utilize this tri
 Full reverse + reverse at another end
 if no of rotations are > elments in array => rotations= rotations%elements count;
  */
-package ArraySimplePackage.Arrays;
+package Arrays.All;
 
 public class Easy_MultipleLeftRotations {
     public  int[][] solve(int[] A, int[] B) {

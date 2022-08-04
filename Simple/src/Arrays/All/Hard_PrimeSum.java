@@ -15,7 +15,7 @@ we simply need to iterate and check for every if i and A-i are prime
 Since above task of checking prime we need to do repeatedly
 Lets make a Sieve array for this.
  */
-package ArraySimplePackage.Arrays;
+package Arrays.All;
 
 public class Hard_PrimeSum {
     public int[] primesum(int A) {

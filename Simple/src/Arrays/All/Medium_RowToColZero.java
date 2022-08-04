@@ -14,7 +14,7 @@ for each coordinate traverse row wise or col wise fixing that row and col and ma
 
  */
 
-package ArraySimplePackage.Arrays;
+package Arrays.All;
 
 public class Medium_RowToColZero {
     public int[][] solve(int[][] A) {

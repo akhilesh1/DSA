@@ -7,7 +7,7 @@ Solution approach
 Handle corner cases separately (Boundry ones)
 for in between elements just use the observation of curItem=sum of previous rows's element
  */
-package ArraySimplePackage.Arrays;
+package Arrays.All;
 
 import java.util.ArrayList;
 

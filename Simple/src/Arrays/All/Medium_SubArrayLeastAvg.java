@@ -23,7 +23,7 @@ Solution Approach
 1)Using sliding window calculate only sum of each window *(No need to calculate avg)* and store in an array
 2)Traverse the array and get the required index
  */
-package ArraySimplePackage.Arrays;
+package Arrays.All;
 
 public class Medium_SubArrayLeastAvg {
     public int solve(int[] A, int B) {

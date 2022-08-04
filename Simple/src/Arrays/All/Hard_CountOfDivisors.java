@@ -15,7 +15,7 @@ Solution approach
 //iterate on the input array and get the divisor for each element
  */
 
-package ArraySimplePackage.Arrays;
+package Arrays.All;
 
 public class Hard_CountOfDivisors {
     public int[] solve(int[] A) {

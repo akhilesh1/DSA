@@ -23,7 +23,7 @@ calculate Esum , Osum check if they are equal at every iteration count++
 
 
  */
-package ArraySimplePackage.Arrays;
+package Arrays.All;
 
 public class Medium_EQ_IndexOddEven {
 }

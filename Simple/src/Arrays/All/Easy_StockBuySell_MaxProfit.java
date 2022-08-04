@@ -9,7 +9,7 @@ Solution approach
 keep calculating min price at every element
 Keep calculating profit at every step
  */
-package ArraySimplePackage.Arrays;
+package Arrays.All;
 
 import java.util.ArrayList;
 

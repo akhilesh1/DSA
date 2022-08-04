@@ -18,7 +18,7 @@ this is a two step approach
 and check if its distance  <already existing distance(whole array length)
 
  */
-package ArraySimplePackage.Arrays;
+package Arrays.All;
 
 public class Medium_ClosestMinMax {
     public int solve(int[] A) {

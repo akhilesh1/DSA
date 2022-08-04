@@ -5,7 +5,7 @@ You are given a constant array A.
 You are required to return another array which is the reversed form of the input array.
 
  */
-package ArraySimplePackage.Arrays;
+package Arrays.All;
 
 public class Easy_ReverseArray {
     // DO NOT MODIFY THE ARGUMENTS WITH "final" PREFIX. IT IS READ ONLY

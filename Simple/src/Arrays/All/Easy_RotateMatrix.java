@@ -21,7 +21,7 @@ row => i in [0,R]
 cols => j in [i+1,C]
 
  */
-package ArraySimplePackage.Arrays;
+package Arrays.All;
 
 public class Easy_RotateMatrix {
 }
