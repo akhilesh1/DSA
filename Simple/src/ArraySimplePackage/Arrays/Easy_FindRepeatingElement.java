@@ -18,6 +18,8 @@ Keep a hashmap as soon as encounter duplicate return
  */
 package ArraySimplePackage.Arrays;
 
+import java.util.HashMap;
+
 public class Easy_FindRepeatingElement {
     public int solve(int[] A) {
         int N=A.length;
