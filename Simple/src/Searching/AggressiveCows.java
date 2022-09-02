@@ -17,8 +17,9 @@ Since we can not directly count min distance
 bu we can count how many cows we can have if we have *given distance*
 this is hit and trial method we will binary search for complete distance range [0, A[N-1]-A[0]]
  */
-package Searching;
 
+package Searching;
+import java.util.Arrays;
 public class AggressiveCows {
     public int solve(int[] A, int B)
     {

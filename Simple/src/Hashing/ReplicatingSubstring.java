@@ -21,6 +21,8 @@ just create a frequency map and if frequency of each char is mulple of A then we
  */
 package Hashing;
 
+import java.util.HashMap;
+
 public class ReplicatingSubstring {
     public int solve(int A, String B) {
         int N=B.length();

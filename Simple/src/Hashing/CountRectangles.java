@@ -27,6 +27,8 @@ also few edge case
 
 package Hashing;
 
+import java.util.HashSet;
+
 class Coordinate
 {
     public int X;

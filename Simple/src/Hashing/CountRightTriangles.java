@@ -17,6 +17,8 @@ Solution Approarch
 
  */
 package Hashing;
+import java.util.Arrays;
+import java.util.HashMap;
 
 public class CountRightTriangles {
     public int solve(int[] A, int[] B) {
