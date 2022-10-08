@@ -21,6 +21,13 @@ Problem Constraints
 Solution Approach
 1, 2,   12, 22    ,121, 122
 
+get this nth number
+result is just nth+mirror image of nth number
+
+Ans Series
+1 1, 22,   12 21, 22 22 ,121 121, 122 221
+
+
 Items exists in pairs at a time we will keep only two integers in queue
 ------------------
 Rear-->2,1-->Front
