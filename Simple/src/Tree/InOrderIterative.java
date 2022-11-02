@@ -9,6 +9,15 @@ NOTE: Using recursion is not allowed.
 Problem Constraints
 1 <= number of nodes <= 105
 
+Solution approach LNR
+Iterate while either stack is null or node is null
+Part 1 Left
+    store the node
+    go left
+Part 2 Node Right
+    get the node from stack
+    print()
+    go right
 
  */
 package Tree;
