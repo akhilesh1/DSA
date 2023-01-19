@@ -18,7 +18,10 @@ Problem Constraints
 
 Solution approach
 carry forward concept
-for every element if it got an odd switch request
+find effective state=cur state(toggle if odd number of requests)
+we will increase count of switch only when its effective state is OFF
+
+
  */
 package Arrays.All;
 

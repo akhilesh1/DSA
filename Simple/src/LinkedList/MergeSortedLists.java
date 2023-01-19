@@ -32,9 +32,12 @@ public class MergeSortedLists {
         {
             if(A.val<B.val)
             {
+                //1)Assign value
                 tail.next=A;
-                A=A.next;
+                //2)Move Forward
                 tail=tail.next;
+                A=A.next;
+
             }
             else
             {

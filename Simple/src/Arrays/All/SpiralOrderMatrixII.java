@@ -7,7 +7,7 @@ take 4 pointers and keep updating these pointers
 rowStart rowEnd, colStart colEnd
 */
 
-public class Solution {
+ class SpiralOrderMatrixII {
     public int[][] generateMatrix(int A) {
         int N=A;
         int[][] spiralResult= new int[N][N];

@@ -14,7 +14,7 @@ Solution approach
         //we just need to find which subarray yield min swaps
         //we will keep that window sliding
 */
-public class Solution {
+public class MinimumSwaps {
     public int solve(int[] A, int B) {
         //ans will be a fixed sized subarray 
         //we just need to find which subarray yield min swaps

@@ -17,9 +17,9 @@ Problem Constraints
 
 Solution Approach
 eg 13542=>14532=>14 235  not
-1)Get index I1= from the right get first element which is smaller than previous
-2)Get index I2=which element is greater than A[I1]
-3)swap element at I1 I2
+1)Get index I1= from the right get first element which is smaller than previous [4]
+2)Get index I2=from right which element is greater than A[I1]=4 , 2
+3)swap element at I1 I2 13524
 4)reverse all elements which are right to I1
 
 Corner case

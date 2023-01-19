@@ -41,6 +41,8 @@ B)If no overlap
  */
 package Arrays.All;
 
+import java.util.ArrayList;
+
 public class InsertNewInterval {
     public ArrayList<Interval> insert(ArrayList<Interval> intervals, Interval newInterval) {
         ArrayList<Interval> ans=new ArrayList<Interval>();

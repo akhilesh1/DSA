@@ -1,0 +1,20 @@
+Sum n natual number= (N*(N+1))/2
+Nth term of AP= A+(N-1)*D
+Sum of N terms=N/2*(2A+(N-1)*D)
+GP=a(R^N-1)/(R-1)
+
+
+
+log2 2^N==N
+
+GCD is actually D-->C-->G
+    meaning get all *Devisors* , then look for *Common* , then pick the *Greatest*
+    Range will lie between (min of both till 0)
+    Practical usage : distribute N,M items equally it will get how many people will get equal share
+LCM is actually M-->C-->L
+    meaning get all *Multiples* , then look for *Common*, then pick *Least*
+    Range will lie between (max of both till Infinite)
+    Practical Usage : collect items
+Since upper bound of LCM is higher
+
+if LCM is asked we can calculate if using LCM=A*B/GCD

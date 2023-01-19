@@ -3,7 +3,7 @@ Keep track of 4 pointers
 1)start 2)end 3)startJoint(just before start) 4)endJoint(just after end)
 
 get all 4 above by simple traversal
- then break the chain between end and end joint
+ then break the chain between Start and end joint
  Make a reverse by reverse function
  join again
  Notice
