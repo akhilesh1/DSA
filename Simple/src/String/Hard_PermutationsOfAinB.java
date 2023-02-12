@@ -10,6 +10,9 @@ Problem Constraints
 1 <= N < M <= 105
 
 Solution Approach
+
+Idea : if  A string has a valid permutation in *B* then then freq map of current and target should be same
+
 Find frequency map of search string A
 find frequency map of first substring
 slide and update frequency (add new char's freq) remove old char frequency
