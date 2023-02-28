@@ -7,7 +7,9 @@ Stratagey in three steps
 
 Step 1 cur node will store its next pointer for future in a variable NXT
 Step 2 cur node is now free to perform operation to it will point back to Variable PREV
+Step 3 move next and cur pointer to next location
 
+Note since loop is terminating at c==nul so need to returning prev node not curent node.
  */
 package LinkedList;
 
