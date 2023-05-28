@@ -1,4 +1,10 @@
 /*
+
+***Used in Single source shortest path SSSP***
+Where need to find the distance from single source to all nodes.
+
+
+
 Problem Description
 Given a directed graph having A nodes labelled from 1 to A containing M edges given by matrix B of size M x 2such that there is a edge directed from node
 
