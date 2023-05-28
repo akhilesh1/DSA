@@ -3,6 +3,8 @@
 ***Used in Single source shortest path SSSP***
 Where need to find the distance from single source to all nodes.
 
+Works on unweighted graph.
+
 
 
 Problem Description
