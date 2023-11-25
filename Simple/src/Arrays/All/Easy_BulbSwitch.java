@@ -63,4 +63,15 @@ public class Easy_BulbSwitch {
         }
         return count;
     }
+   //More consice version
+   // only need to count that when we need a toggle
+  // toggle if current state + previous toggle is zero
+   public int bulbs(int[] A) {
+        int ans=0;
+        for(int i=0;i<A.length;i++){
+            if((A[i]==0 && ans%2==0)||(A[i]==1 && ans%2==1))
+                ans++;
+        }
+        return ans;
+    }
 }
