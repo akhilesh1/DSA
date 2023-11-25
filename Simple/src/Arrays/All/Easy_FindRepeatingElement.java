@@ -34,7 +34,7 @@ Problem Constraints
 1 <= A[i] <= 109
 
 Solution
-Keep a hashmap as soon as encounter duplicate return
+Keep a hashmap for checking if something repeated, keep minimum index of repetetion.
  */
 package Arrays.All;
 
