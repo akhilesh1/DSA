@@ -57,4 +57,20 @@ public class Easy_FindRepeatingElement {
 
         return -1;
     }
+  // no need to iterate again keep track of minimum index value
+   public int solveBetter(int[] A) {
+        int N=A.length;
+        int lesserIndex=Integer.MAX_VALUE;
+        HashMap<Integer,Integer> hs=new HashMap<Integer,Integer>();
+        for(int i=0;i<N;i++){
+            if(hs.containsKey(A[i]))
+               lesserIndex=Math.min(hs.get(A[i]),lesserIndex);
+            else
+                hs.put(A[i],i);
+        }
+        
+        
+
+        return lesserIndex==Integer.MAX_VALUE?-1:A[lesserIndex];
+    }
 }
