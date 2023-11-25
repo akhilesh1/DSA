@@ -23,8 +23,19 @@ Problem Constraints
 
 Solution Approach
 Rotation we dont know but we know reverse very well, so we will utilize this trick of
-Full reverse + reverse at another end
+Full reverse + reverse two parts by another end
+Eg.
+1,2,3,4,5-----------------2 Left Rotation->3,4,5, 1,2
+     Full reverse
+5,4,3,  2,1
+|       | (Reverse two parts by another end)
+3,4,5   1,2
+
+     
 if no of rotations are > elments in array => rotations= rotations%elements count;
+
+**Thinking**
+Can implement a index converter function which will recive index with offset and do the array creation.
  */
 package Arrays.All;
 
