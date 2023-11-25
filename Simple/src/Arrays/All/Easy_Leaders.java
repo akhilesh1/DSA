@@ -35,6 +35,7 @@ Problem Constraints
 
 Solution Approach
 from right to left <-----|
+since righmost is always a leder consider that current maximum from start
 Carry forward the maxElement from right and compare it with current element
 increase count if we encounter greater element
 
@@ -44,16 +45,19 @@ package Arrays.All;
 import java.util.ArrayList;
 
 public class Easy_Leaders {
-    public ArrayList<Integer> solve(ArrayList<Integer> A) {
+
+   //Better solution
+   public ArrayList<Integer> solve(ArrayList<Integer> A) {
         int N=A.size();
         ArrayList<Integer> resultList=new ArrayList<Integer>();
         resultList.add(A.get(N-1));
-        int curMax=-1;
-
-        for(int i=N-2;i>=0;i--){
-            curMax=Math.max(curMax,A.get(i+1));
+        int curMax=A.get(N-1);
+        for(int i=N-2;i>=0;i--){     
             if(A.get(i)>curMax)
+            {
                 resultList.add(A.get(i));
+                curMax=A.get(i);
+            }
         }
         return resultList;
     }
