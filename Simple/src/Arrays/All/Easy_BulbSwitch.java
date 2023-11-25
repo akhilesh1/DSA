@@ -10,7 +10,27 @@ You can press the same switch multiple times.
 
 Note: 0 represents the bulb is off and 1 represents the bulb is on.
 
+Example Input
 
+Input 1:
+
+ A = [0, 1, 0, 1]
+
+Input 2:
+
+ A = [1, 1, 1, 1]
+
+
+
+Example Output
+
+Output 1:
+
+ 4
+
+Output 2:
+
+ 0
 
 Problem Constraints
 0 <= N <= 5×105
