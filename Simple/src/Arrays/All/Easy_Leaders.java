@@ -7,7 +7,25 @@ An element is a leader if it is strictly greater than all the elements to its ri
 
 NOTE:The rightmost element is always a leader.
 
+Example Input
+Input 1:
 
+ A = [16, 17, 4, 3, 5, 2]
+
+Input 2:
+
+ A = [5, 4]
+
+
+
+Example Output
+Output 1:
+
+[17, 2, 5]
+
+Output 2:
+
+[5, 4]
 
 Problem Constraints
 
