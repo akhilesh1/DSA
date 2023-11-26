@@ -1,6 +1,9 @@
 /*
 Problem Description
 You are given a constant array A.
+Can be done easily by swapping two numbers using a temp variable 
+but advanced step is doing without extra variable 
+just +-
 
 You are required to return another array which is the reversed form of the input array.
 
