@@ -1,6 +1,7 @@
 /*
 Problem Description
-Given an array with N objects colored red, white, or blue, sort them so that objects of the same color are adjacent, with the colors in the order red, white, and blue.
+Given an array with N objects colored red, white, or blue, sort them so that objects of the same color are adjacent,
+with the colors in the order red, white, and blue.
 
 We will use the integers 0, 1, and 2 to represent red, white, and blue, respectively.
 
