@@ -23,5 +23,41 @@ cols => j in [i+1,C]
  */
 package Arrays.All;
 
-public class Easy_RotateMatrix {
+public class Solution {
+    public void solve(int[][] A) {
+        int r=A.length;
+        int c=A[0].length;
+        // bottom triangle
+        for(int i=1;i<r;i++){
+            for(int j=0;j<i;j++){
+                int T=A[j][i];
+                A[j][i]=A[i][j];
+                A[i][j]=T;
+            }
+            
+        }
+        for(int i=0;i<A.length;i++){
+            reverse(A[i]);
+        }
+    }
+    public void reverse(int[] A){
+        int i=0,j=A.length-1;
+        while(i<j){
+            A[i]=A[i]+A[j];
+            A[j]=A[i]-A[j];
+            A[i]=A[i]-A[j];
+            i++;
+            j--;
+        }
+        
+
+    }
+}
+//Just in case you want to reverse upper triangle
+ for(int i=0;i<r;i++){
+    for(int j=i+1;j<c;j++){
+        int T=A[j][i];
+        A[j][i]=A[i][j];
+        A[i][j]=T;
+    }       
 }
