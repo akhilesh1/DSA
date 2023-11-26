@@ -4,7 +4,8 @@ as they were yesterday and indices of the array represent minutes.
 Your task is to find and return the maximum profit you can make by buying and selling the stock.
 You can buy and sell the stock only once.
 
-
+Input: prices = [7,1,5,3,6,4]
+Output: 7
 Solution approach
 |===>
 keep calculating min price at every element
