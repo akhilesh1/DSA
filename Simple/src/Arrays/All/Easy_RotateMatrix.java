@@ -22,6 +22,8 @@ Transpose is tricky you can not swap whole rows to columns, other wise same
 need to only reverse bottom or upper triangle.
 
 use the same anology to print diagnol in M*M matrix
+since diagnol on 11,22,33,44 index
+j should never go beyond i 
 
  */
 package Arrays.All;
