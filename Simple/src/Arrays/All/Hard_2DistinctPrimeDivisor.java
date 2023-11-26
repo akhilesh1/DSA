@@ -8,6 +8,10 @@ You are given a number A, and you need to determine the count of lucky numbers b
 
 Problem Constraints
 1 <= A <= 50000
+
+Solution approach.
+Seive of E will help in counting the devisor for each number,
+then simply iterate over seive and count how many are such devisor.
  */
 package Arrays.All;
 
