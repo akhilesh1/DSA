@@ -21,6 +21,10 @@ Solution approach
 we need to R-M and R+M to calcualte repeat and missing
 R-M can be calculated as currentSum-IdealSum
 
+(3+1+2+5+3)-(1+2+3+4+5) here non repeat and non missing
+will cancel out each other
+only R and M will remain.
+
 for R+M we need 
 
 R^2-M^2/R-M
