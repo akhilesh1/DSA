@@ -17,7 +17,19 @@ Output:[3, 4]
 
 A = 3, B = 4
 
+Solution approach
+we need to R-M and R+M to calcualte repeat and missing
+R-M can be calculated as currentSum-IdealSum
 
+for R+M we need 
+
+R^2-M^2/R-M
+
+r sq-m sq can be calculated 
+
+as currentSumSquare-idealSumSquare
+
+now you need to calculate currentSumSquare and idealSumSquare
  */
 package Arrays.All;
 
@@ -31,10 +43,10 @@ public class Easy_RepeatAndMissing {
             currentSum+=A[i];
             currentSumSquare+=(1L*A[i]*A[i]);
         }
-        long XMinusY=currentSum-idealSum;
-        long XSqMinusYSq=currentSumSquare-idealSumSquare;
-        long XPlusY=(long)(XSqMinusYSq/XMinusY);
-        int X=(int)((XMinusY+XPlusY)/2);
-        return new int[] {X,(int)(XPlusY-X)};
+        long RMinusM=currentSum-idealSum;
+        long RSqMinusMSq=currentSumSquare-idealSumSquare;
+        long RPlusM=(long)(RSqMinusMSq/RMinusM);
+        int R=(int)((RMinusM+RPlusM)/2);
+        return new int[] {R,(int)(RPlusM-M)};
     }
 }
