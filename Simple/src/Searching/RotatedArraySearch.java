@@ -1,3 +1,10 @@
+
+//First find the sorted portion.
+
+//First priority is given to the sorted range, we prefer to go to that range, but
+
+//If sorted porttion range is not ok then go for not sorted discrete space.
+
 package Searching;
 
 public class RotatedArraySearch {
