@@ -24,6 +24,10 @@ and from this range for any number i [0, N*M-1]
 we can get corresponding coordinates as i/M,i%M
 where M is number of columns
 
+and the reqson why we are doing / and % not by row because our data is
+partitioned by colums not by row.
+
+if data is distributed by row we would have done by rows
 rest is simple binary search
  */
 
