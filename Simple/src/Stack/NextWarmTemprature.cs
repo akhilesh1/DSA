@@ -19,7 +19,10 @@ Output: [1,1,4,2,1,1,0,0]
 Example 2:
 
 Input: temperatures = [30,40,50,60]
-Output: [1,1,1,0]*/
+Output: [1,1,1,0]
+
+hint : only need closet maximum element, single integer wont work since we need history of monotonically decreasing stack
+*/
 public class Solution {
     public int[] DailyTemperatures(int[] temperatures) {
         int N=temperatures.Length;
