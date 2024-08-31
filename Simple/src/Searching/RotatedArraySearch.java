@@ -1,7 +1,8 @@
 
-//First find the sorted portion.
+//First find the sorted portion.  if left not sorted then *right must be sorted*
 
-//First priority is given to the sorted range, we prefer to go to that range, but
+//First priority is given to the sorted range, we prefer to go to that range, 
+// but we need to check if our target can be in that sorted space
 
 //If sorted porttion range is not ok then go for not sorted discrete space.
 
