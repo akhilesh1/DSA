@@ -3,6 +3,22 @@ Need to break the link and reverse it
 Just need a temp pointer to keep track of node to be broken
 
 
+you will always see scenario like this while reversing the linked list.
+
+null          (1)->(2)->(3)
+^              ^
+|              |
+|              |
+prev          cur
+
+null<--(1)         (2)->(3)
+        ^           ^
+        |           |
+        |           |
+        prev        cur
+
+
+
 Stratagey in three steps
 
 Step 1 cur node will store its next pointer for future in a variable NXT
