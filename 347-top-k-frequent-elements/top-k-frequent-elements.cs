@@ -31,10 +31,9 @@ public class Solution {
        for (int i = N; i >= 0 && idx < k; i--) {
             if (buckets[i].Count > 0) {
                 foreach (var num in buckets[i]) {
-                    if (idx < k)
-                        ans[idx++] = num;
-                    else
+                    if (idx == k)
                         break;
+                    ans[idx++] = num;
                 }
             }
         }
