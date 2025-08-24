@@ -5,7 +5,6 @@ public class Solution {
         
         return true;
     }
-    
     bool validBlocks(char[][] board)
     {
         for(int i=0;i<9;i+=3)
@@ -17,40 +16,50 @@ public class Solution {
                 {
                     for(int l=j;l<j+3;l++)
                     {
-                        if(board[k][l]=='.') continue;
-                        if(set.Contains(board[k][l])) return false;
+                        if(board[k][l]!='.') 
+                        {
+                            if(set.Contains(board[k][l])) 
+                                return false;
 
-                        set.Add(board[k][l]);
+                            set.Add(board[k][l]);
+                        }
                     }
                 }
+                set.Clear();
             }
         }
         return true;
     }
 
+   
     bool validRowsCols(char[][] board)
     {
         for(int i=0;i<9;i++)
         {
-            HashSet<char> set1=new(); // for rows
-            HashSet<char> set2=new(); // for columns
+            HashSet<char> set1=new();
+            HashSet<char> set2=new();
             for(int j=0;j<9;j++)
             {
-                // Check row
-                if(board[i][j] != '.')
+                if(board[i][j]!='.') 
                 {
-                    if(set1.Contains(board[i][j])) return false;
+                    if(set1.Contains(board[i][j])) 
+                        return false;
+
                     set1.Add(board[i][j]);
                 }
                 
-                // Check column
-                if(board[j][i] != '.')
+                if(board[j][i]!='.') 
                 {
-                    if(set2.Contains(board[j][i])) return false;
+                    if(set2.Contains(board[j][i])) 
+                        return false;
+
                     set2.Add(board[j][i]);
                 }
             }
+            set1.Clear();
+            set2.Clear();
         }
         return true;
     }
+
 }
