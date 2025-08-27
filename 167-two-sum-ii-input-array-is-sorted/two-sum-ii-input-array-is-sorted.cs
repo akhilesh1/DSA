@@ -6,13 +6,11 @@ public class Solution {
         while(left<right)
         {
             int curSum=numbers[left]+numbers[right];
-            if(curSum==target)
-                return new[] {left+1,right+1};
+            
+            if(curSum==target)  return new[] {left+1,right+1};
 
-            if(curSum>target)
-                right--;
-            else
-                left++;
+            if(curSum>target) right--;
+            else left++;
         }
         return new[] {0,0};
     }
