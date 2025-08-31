@@ -7,7 +7,7 @@ public class Solution {
         Stack<char> st=new();
         for(int i=0;i<N;i++)
         {
-            if(pairs.IndexOf(s[i])%2==0)
+            if((pairs.IndexOf(s[i]) & 1)==0)
             {
                 st.Push(s[i]);
             }
