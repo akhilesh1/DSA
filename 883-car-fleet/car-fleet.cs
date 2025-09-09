@@ -5,9 +5,9 @@ public class Solution {
         var stack = new Stack<double>();
         for (int i = n - 1; i >= 0; i--) {
             double time = (double)(target - cars[i].p) / cars[i].s;
-            stack.Push(time);
-            if (stack.Count > 1 && stack.Peek() <= stack.ElementAt(1)) 
-                stack.Pop();
+            
+            if(stack.Count==0 || stack.Peek()<time)
+                stack.Push(time);
         }
         return stack.Count;
     }
