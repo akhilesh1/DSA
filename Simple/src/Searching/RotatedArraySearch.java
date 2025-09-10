@@ -1,5 +1,6 @@
 
-//First find the sorted portion.  if left not sorted then *right must be sorted*
+//with this setting either left or right portion will be sorted in ASC ORDER that is fact.
+//First find the sorted ASCENDING portion.  if left not sorted then *right must be sorted*
 
 //First priority is given to the sorted range, we prefer to go to that range, 
 // but we need to check if our target can be in that sorted space
