@@ -23,8 +23,8 @@ public class Solution {
         {
             int mid=min+(max-min)/2;
 
-            //if(GetHoursTaken(piles,mid)==h && GetHoursTaken(piles,mid-1)>h)
-            //    return mid;
+            if(GetHoursTaken(piles,mid)==h && GetHoursTaken(piles,mid-1)>h)
+                return mid;
             if(GetHoursTaken(piles,mid)>h)//aur khao
                 min=mid+1;
             else
