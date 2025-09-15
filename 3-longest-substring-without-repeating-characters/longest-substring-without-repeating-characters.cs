@@ -9,9 +9,10 @@ public class Solution {
         if (set.Contains(s[right])) {
             set.Remove(s[left]);
             left++;
-        } else {
+        } 
+        else {
             set.Add(s[right]);
-            ans = Math.Max(ans, right - left + 1);
+            ans = Math.Max(ans, set.Count);
             right++;
         }
     }
