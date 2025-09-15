@@ -6,13 +6,13 @@ public class Solution {
     HashSet<char> set = new();
 
     while (right < N) {
-        if (!set.Contains(s[right])) {
+        if (set.Contains(s[right])) {
+            set.Remove(s[left]);
+            left++;
+        } else {
             set.Add(s[right]);
             ans = Math.Max(ans, right - left + 1);
             right++;
-        } else {
-            set.Remove(s[left]);
-            left++;
         }
     }
     return ans;
