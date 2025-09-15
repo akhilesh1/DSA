@@ -14,14 +14,14 @@ public class Solution {
             {// not sure what to move
                 set.Remove(s[left]);
                 left++;
+                continue;
             }
             else
             {
                 set.Add(s[right]);
-                ans=Math.Max(ans,set.Count);
-                right++;
-                
+                ans=Math.Max(ans,set.Count);  
             }
+            right++;
 
         }
         return ans;
