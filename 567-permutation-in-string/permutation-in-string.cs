@@ -18,8 +18,8 @@ public class Solution {
         if (checkIfZero(freq)) return true;
         for(int i=N;i<M;i++)
         {
-            freq[s2[i]-'a']--;
             freq[s2[i-N]-'a']++;
+            freq[s2[i]-'a']--;     
             if(checkIfZero(freq)) return true;
             
         }
