@@ -14,15 +14,10 @@ public class Solution {
         ListNode fast=head;
         ListNode slow=head;
 
-        while(fast!=null)
+        while(fast!=null && fast.next!=null)
         {
-            if(fast.next==null) // odd case
-                return slow;
-            else
-            {
                 slow=slow.next;
                 fast=fast.next.next;
-            }
         }
         return slow;
     }
