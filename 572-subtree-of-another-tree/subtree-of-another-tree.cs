@@ -14,25 +14,13 @@
 public class Solution {
     
     public bool IsSubtree(TreeNode root, TreeNode subRoot) 
-    {
-        var result=false;
-        DFS(root,subRoot,ref result);
-        return result;
-    }
-
-    public void DFS(TreeNode root, TreeNode subRoot,ref bool result)
-    {
-        if (root == null || result) return; 
+    {   
+        if (root == null) return false; 
         else if(root.val==subRoot.val && CheckSubTree(root,subRoot))
         {
-            result = true;
-            return;
+            return true;
         }
-        else
-        {
-            DFS(root.left,subRoot,ref result);
-            DFS(root.right,subRoot,ref result);
-        }
+        return IsSubtree(root.left,subRoot) || IsSubtree(root.right,subRoot);
     }
 
     public bool CheckSubTree(TreeNode root, TreeNode subRoot)
