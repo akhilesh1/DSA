@@ -13,29 +13,33 @@
  */
 public class Solution {
     public IList<IList<int>> LevelOrder(TreeNode root) {
-        var result = new List<IList<int>>();
-        if (root == null) return result;
+        Queue<TreeNode> queue=new();
+        List<IList<int>> ans=new();
 
-        var queue = new Queue<TreeNode>();
+        if(root==null) return ans;
+        
         queue.Enqueue(root);
-
-        while (queue.Count > 0)
+        while(queue.Count>0)
         {
-            int size = queue.Count;
-            var level = new List<int>();
-
-            for (int i = 0; i < size; i++)
+            var cur=new List<int>();
+            ans.Add(cur);
+            int N=queue.Count;
+            for(int i=0;i<N;i++)
             {
-                var node = queue.Dequeue();
-                level.Add(node.val);
+                TreeNode node=queue.Dequeue();
+                cur.Add(node.val);
 
-                if (node.left != null) queue.Enqueue(node.left);
-                if (node.right != null) queue.Enqueue(node.right);
+                if(node.left!=null)
+                {
+                    queue.Enqueue(node.left);
+                    
+                }
+                if(node.right!=null)
+                {
+                    queue.Enqueue(node.right);
+                }
             }
-
-            result.Add(level);
         }
-
-        return result;
+        return ans;
     }
 }
