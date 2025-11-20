@@ -16,7 +16,8 @@ public class Solution {
         if(idx==candidates.Length)
             return;
 
-        if(candidates[idx]>required)
+
+        if(candidates[idx]>required)//this block is of no use
         {
             Backtrack(candidates,idx+1,required,cur,ans);
             return;
