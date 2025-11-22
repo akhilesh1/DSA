@@ -1,17 +1,18 @@
 public class Solution {
     public int[] TwoSum(int[] numbers, int target) {
         int N=numbers.Length;
-        int left=0;
-        int right=N-1;
-        while(left<right)
+        int start=0;
+        int end=N-1;
+        while(start<end)
         {
-            int curSum=numbers[left]+numbers[right];
-            
-            if(curSum==target)  return new[] {left+1,right+1};
-
-            if(curSum>target) right--;
-            else left++;
+            int curSum=numbers[start]+numbers[end];
+            if(curSum==target)
+                return [start+1,end+1];
+            else if(curSum>target)
+                end-=1;
+            else
+                start+=1;
         }
-        return new[] {0,0};
+        return [0,0];
     }
 }
