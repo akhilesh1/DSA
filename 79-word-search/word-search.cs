@@ -16,7 +16,7 @@ public class Solution {
         }
         int N=board.Length;
         int M=board[0].Length;
-        if(i < 0 || i >= N || j < 0 || j >= M) return;
+        //if(i < 0 || i >= N || j < 0 || j >= M) return;
         if(board[i][j] == '#') return;
         
         
