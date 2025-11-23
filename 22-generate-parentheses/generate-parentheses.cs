@@ -1,30 +1,34 @@
 public class Solution {
-
     public IList<string> GenerateParenthesis(int n) {
         List<string> ans=new();
         Stack<char> stc=new();
-        backtrack(n,0,0,ans,stc);
+        Backtrack(n,stc,0,0,ans);
         return ans;
     }
 
-    public void backtrack(int n,int opened,int closed,List<string> ans,Stack<char> stc)
+    void Backtrack(int n,Stack<char> stc,int opened,int closed,List<string> ans)
     {
         if(opened==n && opened==closed)
         {
-            ans.Add(new string(stc.Reverse().ToArray()));
+            ans.Add(new String(stc.Reverse().ToArray()));
+            return;
         }
-
+        
+        //options based on intelligence
         if(opened<n)
         {
             stc.Push('(');
-            backtrack(n,opened+1,closed,ans,stc);
+            Backtrack(n,stc,opened+1,closed,ans);
             stc.Pop();
         }
         if(closed<opened)
         {
             stc.Push(')');
-            backtrack(n,opened,closed+1,ans,stc);
+            Backtrack(n,stc,opened,closed+1,ans);
             stc.Pop();
         }
+
     }
+
+   
 }
