@@ -13,20 +13,15 @@
  */
 public class Solution {
     public bool IsValidBST(TreeNode root) {
-
-        //Not sure how to solve if a node wrongly placed in another half of the tree
-        
-
-        return IsValidBSTDown(root,long.MinValue,long.MaxValue);
-        
+      return CheckDown(root,long.MinValue,long.MaxValue);
     }
 
-    public bool IsValidBSTDown(TreeNode root,long minValue,long maxValue)
-    {
-        if(root==null) return true;
-
-        if((root.val>=maxValue || root.val<=minValue)) return false;
-
-        return IsValidBSTDown(root.left,minValue,root.val) && IsValidBSTDown(root.right,root.val,maxValue);
+    public bool CheckDown(TreeNode node,long min,long max)
+    {   
+        if(node==null) return true;
+        if(node.val<=min || node.val>=max)
+            return false;
+        return CheckDown(node.left,min,node.val) && CheckDown(node.right,node.val,max);
     }
+
 }
