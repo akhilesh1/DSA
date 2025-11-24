@@ -13,22 +13,18 @@
  */
 public class Solution {
     public int GoodNodes(TreeNode root) {
-        int ans=0;
-        GetGoodNodesCount(root,int.MinValue,ref ans);
-        return ans;
+       return GetGoodNodes(root,int.MinValue);
     }
 
-    public void GetGoodNodesCount(TreeNode root,int parentValue,ref int ans)
+    int GetGoodNodes(TreeNode node,int val)
     {
-        
-        if(root==null) return;
-
-        if(root.val>=parentValue)
-            ans++;
-
-        GetGoodNodesCount(root.left,Math.Max(root.val,parentValue), ref ans);
-        
-        GetGoodNodesCount(root.right,Math.Max(root.val,parentValue),ref ans);
-
+        int cur=0;
+        if(node==null)
+            return 0;
+        if(node.val<val) 
+            cur=0;
+        else
+            cur=1;
+        return cur+GetGoodNodes(node.left,Math.Max(node.val,val)) + GetGoodNodes(node.right,Math.Max(node.val,val));
     }
 }
