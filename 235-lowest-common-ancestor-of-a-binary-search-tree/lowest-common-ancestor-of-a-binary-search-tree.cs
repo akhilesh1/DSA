@@ -14,15 +14,15 @@ public class Solution {
         if(root==null) return root;
         if(root==p || root==q) return root;
 
-        var leftLCA=LowestCommonAncestor(root.left,p,q);
-        var rightLCA=LowestCommonAncestor(root.right,p,q);
+        var oneExistsInLeft=LowestCommonAncestor(root.left,p,q);
+        var oneExistsInRight=LowestCommonAncestor(root.right,p,q);
 
-        if(leftLCA!=null && rightLCA!=null)
+        if(oneExistsInLeft!=null && oneExistsInRight!=null)
             return root;
-        else if(leftLCA==null)
-            return rightLCA;
+        else if(oneExistsInLeft==null)
+            return oneExistsInRight;
         else
-            return leftLCA;
+            return oneExistsInLeft;
              
 
 
