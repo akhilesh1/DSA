@@ -10,19 +10,21 @@
 
 public class Solution {
     public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-       if(root==null) return null;
+        //At every node check if i have p on left and  on right
+        if(root==null) return root;
+        if(root==p || root==q) return root;
 
-       if(root==p) return root;
-       if(root==q) return root;
+        var leftLCA=LowestCommonAncestor(root.left,p,q);
+        var rightLCA=LowestCommonAncestor(root.right,p,q);
 
-       TreeNode leftLCA=LowestCommonAncestor(root.left,p,q);
-       TreeNode rightLCA=LowestCommonAncestor(root.right,p,q);
-
-       if(leftLCA!=null && rightLCA!=null)// becuase of BST root will be definately lowest 
+        if(leftLCA!=null && rightLCA!=null)
             return root;
-        else if (leftLCA==null)
+        else if(leftLCA==null)
             return rightLCA;
         else
             return leftLCA;
+             
+
+
     }
 }
