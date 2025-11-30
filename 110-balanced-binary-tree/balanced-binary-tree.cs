@@ -13,22 +13,29 @@
  */
 public class Solution {
     public bool IsBalanced(TreeNode root) {
-        
-        if(GetHeight(root)==-1) return false;
+        if(root==null) return true;
+
+        if(GetHeight(root)==-1)
+            return false;
 
         return true;
     }
-    public int GetHeight(TreeNode node)
-    {
-        if(node==null) return 0;
-        int l=GetHeight(node.left);
-        if (l == -1) return -1;
-        int r=GetHeight(node.right);
-        if (r == -1) return -1;
 
-        if (Math.Abs(l - r) > 1)
+    public int GetHeight(TreeNode root)
+    {
+        if(root==null) return 0;
+        int leftHeight=0;
+        int rightHeight=0;
+        if(root.left!=null)
+            leftHeight=GetHeight(root.left);
+        if(root.right!=null)
+            rightHeight=GetHeight(root.right);
+        
+        if(leftHeight==-1 || rightHeight==-1)
+            return -1;
+        if(Math.Abs(leftHeight-rightHeight)>1)
             return -1;
 
-        return Math.Max(l,r)+1;
+        return 1+Math.Max(leftHeight,rightHeight);
     }
 }
