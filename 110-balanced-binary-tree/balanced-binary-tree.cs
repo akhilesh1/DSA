@@ -13,7 +13,7 @@
  */
 public class Solution {
     public bool IsBalanced(TreeNode root) {
-        if(root==null) return true;
+        //if(root==null) return true;
 
         if(GetHeight(root)==-1)
             return false;
