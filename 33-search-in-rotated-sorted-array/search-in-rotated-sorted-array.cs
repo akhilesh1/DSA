@@ -1,26 +1,28 @@
 public class Solution {
     public int Search(int[] nums, int target) {
-        int N=nums.Length;
-        int left=0;
-        int right=N-1;
-        while(left<=right)
+        //7012456
+        //2456701
+        int start=0;
+        int end=nums.Length-1;
+        while(start<=end)
         {
-            int mid=(left+right)/2;
-            if(target==nums[mid])  return mid;
-            else if(nums[0]<=nums[mid])//if left portion is sorted ascending
+            int mid=(start+end)/2;
+            if(nums[mid]==target) return mid;
+            else if(nums[mid]>=nums[start])//left sorted
             {
-                if(target<nums[mid] && target>=nums[0])//make sure target in that sorted space only
-                    right=mid-1;
+                if(target>=nums[start] && target<nums[mid])//if will u find it in left
+                    end=mid-1;
                 else
-                    left=mid+1;
+                    start=mid+1;
             }
-            else//right portion is sorted ascending
+            else//right sorted
             {
-                if(target>nums[mid] && target<=nums[N-1])//make sure target in that sorted space only
-                    left=mid+1;
+                if(target>nums[mid] && target<=nums[end])
+                    start=mid+1;
                 else
-                    right=mid-1;
+                    end=mid-1;
             }
+
         }
         return -1;
     }
